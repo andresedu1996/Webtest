@@ -1,0 +1,96 @@
+body {
+    background: linear-gradient(135deg, #c3cfe2 0%, #c3cfe2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+}
+
+.navbar, footer {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+footer p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+.carousel img {
+    border-radius: 10px;
+}
+
+.icon {
+    font-size: 1.5rem;
+    margin-right: 8px;
+}
+
+.container h1 {
+    margin-top: 20px;
+    font-weight: 600;
+}
+.custom-cta-tab {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white !important;
+  border-radius: 4px;
+  font-weight: 600;
+  display: inline-block;
+  user-select: none;
+}
+.custom-cta-tab:hover {
+  background-color: #0056b3;
+  text-decoration: none;
+  color: white !important;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+.navbar.dark-mode, .glass.dark-mode {
+    background-color: rgba(33, 33, 33, 0.8);
+    backdrop-filter: blur(8px);
+}
+
+footer.dark-mode {
+    background-color: rgba(33, 33, 33, 0.8);
+}
+
+/* Adjust Bootstrap elements */
+.dark-mode .btn-primary {
+    background-color: #bb86fc;
+    border-color: #bb86fc;
+}
+
+.dark-mode .carousel-item img {
+    opacity: 0.9;
+}
+
+
+.privy-bar-tab-inner {
+  border-radius: 50% !important;              /* Makes it circular */
+  width: 90px !important;                     /* Adjust width */
+  height: 90px !important;                    /* Adjust height */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: fixed !important;                 /* So it "floats" */
+  bottom: 100px !important;                   /* Adjust vertical position */
+  right: 20px !important;                     /* Adjust horizontal position */
+  z-index: 9999 !important;
+}
+
+.privy-bar-tab-inner span {
+  font-size: 12px !important;
+  text-align: center !important;
+  padding: 5px !important;
+}

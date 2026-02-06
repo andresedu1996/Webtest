@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privy Test with Bootstrap</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="stylesheet.css">
+
+<!-- BEGIN PRIVY ASYNCHRONOUS WIDGET CODE -->
+<!-- BEGIN PRIVY WIDGET CODE -->
+<script type='text/javascript'> var _d_site = _d_site || 'E891E90DE79544B06D86B536'; </script>
+<script src='https://widget.privy.com/assets/widget.js'></script>
+<!-- END PRIVY WIDGET CODE -->
+<!-- END PRIVY ASYNCHRONOUS WIDGET CODE -->
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg glass">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><i class="bi bi-car-front icon"></i>My Test Site</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="local.html"><i class="bi bi-house-door"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html"><i class="bi bi-box"></i> Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact-us.html"><i class="bi bi-chat-dots"></i> Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="test-page.html"><i class="bi bi-flask"></i> Test Page</a>
+                </li>
+
+                <!-- Privy Tab Cloned into Nav will go here -->
+                <li class="nav-item" id="privy-nav-tab"></li>
+
+                <!-- Custom NAV Bar CTA -->
+                <li class="nav-item">
+                    <button onclick="Privy('show', 4326963);" class="btn btn-primary nav-link">
+                        <i class="bi bi-envelope-plus"></i> Subscribe
+                    </button>
+                </li>
+                <li class="nav-item">
+    <button class="btn btn-outline-secondary nav-link" id="darkModeToggle">
+        <i class="bi bi-moon"></i> Dark Mode
+    </button>
+</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- Content -->
+<div class="container glass p-4 mt-4">
+    <h1 class="text-center mb-4">Welcome to My Test Site</h1>
+    <p class="lead text-center">This is a simple Bootstrap example with a glassmorphism style to test Privy integration.</p>
+</div>
+
+<!-- Carousel -->
+<div class="container mt-4">
+    <div id="demoCarousel" class="carousel slide glass p-2" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://media.istockphoto.com/id/1837143638/photo/car-salesman-showing-a-car-to-customer-couple-at-dealership.jpg?s=2048x2048&w=is&k=20&c=iY7I_zuAwTPxcx3SPgBTjF3dNrtvnXTO7w_By9nQnjY=" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://media.istockphoto.com/id/2198562590/photo/happy-couple-holding-the-keys-of-their-new-car.jpg?s=2048x2048&w=is&k=20&c=4idWU_GV8V7ljySWxzi9eHStkz3wdZzgaZJmCZ18d6c=" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://media.istockphoto.com/id/1392103752/photo/side-view-of-young-beautiful-woman-sitting-inside-car-and-holding-hand-on-steering-wheel-she.jpg?s=2048x2048&w=is&k=20&c=K7zM_cYZQkaUScuBdsmWL_QfAz4pIr2WQwcKTP30Ews=" class="d-block w-100" alt="Slide 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#demoCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demoCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="glass text-center py-3 mt-4">
+    <p>© 2025 My Test Site. All rights reserved.</p>
+    <div class="privy-embed-form" data-campaign="4319168"></div>
+</footer>
+
+
+<!-- BEGIN PRIVY ASYNCHRONOUS WIDGET CODE 
+<script type='text/javascript'>
+   var _d_site = _d_site || 'E891E90DE79544B06D86B536';
+   (function(p, r, i, v, y) {
+     p[i] = p[i] || function() { (p[i].q = p[i].q || []).push(arguments) };
+     v = r.createElement('script'); v.async = 1; v.src = 'https://widget.privy.com/assets/widget.js';
+     y = r.getElementsByTagName('script')[0]; y.parentNode.insertBefore(v, y);
+   })(window, document, 'Privy');
+</script>
+END PRIVY ASYNCHRONOUS WIDGET CODE -->
+
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const observer = new MutationObserver(() => {
+      const disclaimer = document.querySelector('[class*="sc-"][class*="eGti"]'); // Adjust if needed
+
+      if (disclaimer && disclaimer.innerText.includes("By submitting this form")) {
+        disclaimer.innerHTML = 'Al enviar este formulario, aceptas recibir mensajes de texto promocionales y personalizados (por ejemplo, recordatorios de carrito) de Test 2 al número ingresado. La suscripción no es condición para comprar. Responde HELP para ayuda o STOP para cancelar. La frecuencia de mensajes varía. Pueden aplicarse tarifas de mensajes y datos. <a href="https://www.privy.com/terms-and-conditions" target="_BLANK" rel="noreferrer" style="all: revert;">Ver Términos</a> y <a href="https://www.privy.com/privacy-policy" target="_BLANK" rel="noreferrer" style="all: revert;">Privacidad</a>.';
+        observer.disconnect(); // Stop observing once replaced
+      }
+    });
+
+    // Start observing the whole document
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const observer = new MutationObserver(() => {
+      // Look for the Privy widget's outer container (you might adjust the selector for your case)
+      const popupContainer = document.querySelector('.privy-widget-popup-outer-container');
+
+      if (popupContainer && !popupContainer.querySelector('.custom-cta')) {
+        const ctaButton = document.createElement('button');
+        ctaButton.className = 'btn btn-primary custom-cta';
+        ctaButton.innerText = '¡Ver Oferta!';
+        ctaButton.style.marginTop = '15px';
+        ctaButton.onclick = function() {
+          window.open('https://www.tusitio.com/oferta', '_blank');
+        };
+
+        // Add it inside the popup
+        popupContainer.appendChild(ctaButton);
+        
+        observer.disconnect(); // Stop observing once done
+      }
+    });
+
+    // Start observing
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+    });
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const observer = new MutationObserver(() => {
+      // Look for the Privy widget's outer container (you might adjust the selector for your case)
+      const popupContainer = document.querySelector('.privy-widget-popup-outer-container');
+
+      if (popupContainer && !popupContainer.querySelector('.custom-cta')) {
+        const ctaButton = document.createElement('button');
+        ctaButton.className = 'btn btn-primary custom-cta';
+        ctaButton.innerText = '¡Ver Oferta!';
+        ctaButton.style.marginTop = '15px';
+        ctaButton.onclick = function() {
+          window.open('https://www.tusitio.com/oferta', '_blank');
+        };
+
+        // Add it inside the popup
+        popupContainer.appendChild(ctaButton);
+        
+        observer.disconnect(); // Stop observing once done
+      }
+    });
+
+    // Start observing
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+    });
+  });
+
+
+
+  
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const toggle = document.getElementById('darkModeToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+
+      // Toggle dark mode for nav, footer, and glass elements
+      document.querySelectorAll('.navbar, .glass, footer').forEach(el => {
+        el.classList.toggle('dark-mode');
+      });
+    });
+  });
+</script>
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
